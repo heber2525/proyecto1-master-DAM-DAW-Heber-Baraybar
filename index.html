@@ -10,13 +10,100 @@
     <header>
       <img src="imagen/fotoheber2 - Editada.png" alt="logotipo" />
       <nav>
-        <a href="hero">Hero</a>
-        <a href="#sobre mi">sobre mi</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contacto">contacto</a>
+        <ul>
+          <li><a href="#hero">Hero</a></li>
+          <li><a href="#about">sobre mi</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contacto">contacto</a></li>
+        </ul>
       </nav>
-      <main></main>
     </header>
-    <h1>Proyecto 1</h1>
+    <main>
+      <section class="hero">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <img
+          src="imagen/lopez-robin-apax4M-4kFI-unsplash.jpg"
+          alt="imagen fondo"
+        />
+      </section>
+      <section class="about">
+        <section id="about">
+          <h2>Sobre Mí</h2>
+          <p>
+            Hola, soy Heber, un emprendedor curioso y muy resolutivo con una
+            pasión por crear y desarrollar proyectos desde cero. A lo largo de
+            mi trayectoria he fundado seis negocios diferentes, incluyendo un
+            restaurante, una cafetería y una tienda, lo que me ha permitido
+            aprender a gestionar equipos, tomar decisiones rápidas y enfrentar
+            desafíos con creatividad y determinación.
+          </p>
+
+          <p>
+            Actualmente estudio Desarrollo de Aplicaciones Multiplataforma (DAM)
+            en Prometeo, combinando mi pasión por los negocios con el mundo de
+            la tecnología y la programación. Me encanta explorar nuevas ideas,
+            buscar soluciones innovadoras y aprender continuamente, ya sea sobre
+            gestión empresarial, nuevas herramientas digitales o tendencias del
+            mercado.
+          </p>
+
+          <p>
+            Mi objetivo es seguir creciendo profesionalmente, integrando mi
+            experiencia en emprendimiento con mis conocimientos tecnológicos
+            para desarrollar proyectos que sean útiles, impactantes y
+            sostenibles. Disfruto enfrentando retos, encontrando soluciones
+            creativas y trabajando con personas que compartan la misma pasión
+            por la innovación y el aprendizaje.
+          </p>
+        </section>
+      </section>
+      <section class="portfolio">
+        <article>
+          <h3>Web servicios</h3>
+          <img src="imagen/portfolio1 (1).jpg" alt="web servicios" />
+          <p>
+            Web creada con html css y javascript para una empresa de servicios
+          </p>
+        </article>
+        <article>Web Coworking</article>
+        <img src="imagen/portfolio2 (2).jpg" alt="coworking" />
+        <p>Web para un coworking en Madrid, utilizando Javascript y MongoDB</p>
+      </section>
+      <section>
+        <h3>Web Negocios venta teclados</h3>
+        <img src="imagen/portfolio3 (3).jpg" alt="web teclados" />
+        <p>
+          Web creada para empresa de venta de insumos en Galicia utilizando
+          Wordpress y Shopify
+        </p>
+        <article>
+          <h3>Web Peluqueria</h3>
+          <img src="imagen/protfolio4.jpg" alt="web peluqueria" />
+          <p>
+            Web creada para franquicia en Barcelona de peuquerias unisex con
+            Css, Html y Javascript
+          </p>
+        </article>
+      </section>
+
+      <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="">
+          <label for="name">nombre</label>
+          <input type="text" id="nombre" name="nombre" />
+          <label for="apellido">apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" />
+          <label for="mensaje">mensaje</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <button type="submit">enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Mi Portfolio. Sígueme en redes sociales.</p>
+    </footer>
   </body>
 </html>
