@@ -19,15 +19,12 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero">
         <h1>Bienvenido a mi Portfolio</h1>
-        <img
-          src="imagen/lopez-robin-apax4M-4kFI-unsplash.jpg"
-          alt="imagen fondo"
-        />
+        <img alt="imagen fondo" />
       </section>
-      <section class="about">
-        <section id="about">
+      <section id="about">
+        <article class="textoAbout">
           <h2>Sobre Mí</h2>
           <p>
             Hola, soy Heber, un emprendedor curioso y muy resolutivo con una
@@ -55,9 +52,15 @@
             creativas y trabajando con personas que compartan la misma pasión
             por la innovación y el aprendizaje.
           </p>
-        </section>
+        </article>
+        <article>
+          <img
+            src="imagen/fotoheber2 - Editada.png"
+            alt="imagen mia de portfolio"
+          />
+        </article>
       </section>
-      <section class="portfolio">
+      <section id="portfolio">
         <article>
           <h3>Web servicios</h3>
           <img src="imagen/portfolio1 (1).jpg" alt="web servicios" />
@@ -65,17 +68,22 @@
             Web creada con html css y javascript para una empresa de servicios
           </p>
         </article>
-        <article>Web Coworking</article>
-        <img src="imagen/portfolio2 (2).jpg" alt="coworking" />
-        <p>Web para un coworking en Madrid, utilizando Javascript y MongoDB</p>
-      </section>
-      <section>
-        <h3>Web Negocios venta teclados</h3>
-        <img src="imagen/portfolio3 (3).jpg" alt="web teclados" />
-        <p>
-          Web creada para empresa de venta de insumos en Galicia utilizando
-          Wordpress y Shopify
-        </p>
+        <article>
+          <h3>Web Coworking</h3>
+          <img src="imagen/portfolio2 (2).jpg" alt="foto imagen coworking" />
+          <p>
+            Web para un coworking en Madrid, utilizando Javascript y MongoDB
+          </p>
+        </article>
+
+        <article>
+          <h3>Web Negocios venta teclados</h3>
+          <img src="imagen/portfolio3 (3).jpg" alt="web teclados" />
+          <p>
+            Web creada para empresa de venta de insumos en Galicia utilizando
+            Wordpress y Shopify
+          </p>
+        </article>
         <article>
           <h3>Web Peluqueria</h3>
           <img src="imagen/protfolio4.jpg" alt="web peluqueria" />
@@ -86,9 +94,9 @@
         </article>
       </section>
 
-      <section class="contacto">
+      <section id="contacto">
         <h2>Contacto</h2>
-        <form action="">
+        <form>
           <label for="name">nombre</label>
           <input type="text" id="nombre" name="nombre" />
           <label for="apellido">apellido</label>
@@ -96,7 +104,7 @@
           <label for="email">email</label>
           <input type="email" name="email" id="email" />
           <label for="mensaje">mensaje</label>
-          <textarea name="mensaje" id="mensaje"></textarea>
+          <textarea name="mensaje" id="mensaje" rows="10"></textarea>
           <button type="submit">enviar</button>
         </form>
       </section>

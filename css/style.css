@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-texto: #333;
+  --fuente-principal: 'Roboto', sans-serif;
+  --fuente-titulos: 'Montserrat', sans-serif;
+  --color-cabecera: rgb(202, 196, 196);
+  --color-fondo: rgb(232, 230, 230);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--color-texto);
+  padding: 0;
+  display: inline-block;
+  transition: transfom 0.5s ease;
+}
+nav a:hover {
+  color: rgb(82, 36, 36);
+  transform: scale(1.2);
+}
+header img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+section {
+  margin: 130px;
+  padding: 0;
+}
+#about {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+#about article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.textoAbout {
+  display: flex;
+  flex-direction: column;
+}
+.textoAbout h2 {
+  padding: 10px;
+  font-size: 24px;
+  color: var(--color-texto);
+  text-align: center;
+}
+.textoAbout p {
+  text-align: left;
+  padding: 10px;
+  color: var(--color-texto);
+}
+#about img {
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+}
+#portfolio {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#portfolio article {
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+  background-color: var(--color-fondo);
+}
+#portfolio img {
+  width: 100%;
+  height: auto;
+}
+#portfolio h3 {
+  text-align: center;
+  color: var(--color-texto);
+  padding: 30px;
+  font-size: 32px;
+}
+#portfolio p {
+  text-align: center;
+  padding: 45px;
+  font-size: 20px;
+}
+#contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+form input {
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+button {
+  padding: 8px;
+  background-color: var(--color-texto);
+  color: white;
+  width: 100px;
+  margin: 10px auto;
+  cursor: pointer;
+}
