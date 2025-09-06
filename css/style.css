@@ -9,6 +9,7 @@
   --fuente-titulos: 'Montserrat', sans-serif;
   --color-cabecera: rgb(202, 196, 196);
   --color-fondo: rgb(232, 230, 230);
+  --color-texto-h2: rgb(225, 127, 127);
 }
 body {
   background-image: url(../imagen/imagen_fondo2.jpg);
@@ -54,36 +55,74 @@ section {
   margin: 130px;
   padding: 0;
 }
-#about {
+
+#hero {
+  margin-top: 80px;
+  height: 500px;
+  width: auto;
   display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-#about article {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  justify-content: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  margin: 0;
+  padding: 30px;
+}
+.hero p {
+  color: var(--color-texto);
+  font-size: 18px;
+}
+
+.hero img {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: var(--color-texto);
+  align-self: flex-start;
+  font-size: 26px;
+  padding: 0 0 10px 30px;
+}
+#hero h2 {
+  font-size: 22px;
+  align-self: flex-start;
+  color: var(--color-texto-h2);
+  padding-left: 30px;
+}
+
+#about h2 {
+  padding: 50px;
+  color: var(--color-texto);
+  text-align: center;
+  font-size: 30px;
 }
 .textoAbout {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
 }
-.textoAbout h2 {
-  padding: 10px;
-  font-size: 24px;
-  color: var(--color-texto);
-  text-align: center;
-}
+
 .textoAbout p {
-  text-align: left;
-  padding: 10px;
-  color: var(--color-texto);
+  font-size: 20px;
 }
-#about img {
-  height: 300px;
-  width: auto;
-  border-radius: 50%;
+.textoAbout h3 {
+  padding: 10px;
+  font-size: 22px;
+  text-align: center;
+  color: var(--color-texto-h2);
+}
+.seccionPortfolio h2 {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 #portfolio {
   display: flex;
@@ -106,7 +145,8 @@ section {
   text-align: center;
   color: var(--color-texto);
   padding: 30px;
-  font-size: 32px;
+  font-size: 24px;
+  color: var(--color-texto-h2);
 }
 #portfolio p {
   text-align: center;
