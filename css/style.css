@@ -10,6 +10,9 @@
   --color-cabecera: rgb(202, 196, 196);
   --color-fondo: rgb(232, 230, 230);
 }
+body {
+  background-image: url(../imagen/imagen_fondo2.jpg);
+}
 
 header {
   display: flex;
